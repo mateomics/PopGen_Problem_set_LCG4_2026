@@ -1,0 +1,31 @@
+---
+output:
+  pdf_document:
+    toc: yes
+    toc_depth: 3
+    fig_caption: true
+    keep_tex: true
+    number_sections: true
+    latex_engine: xelatex
+    includes:
+      before_body: docs/cover_pt2.tex
+fontsize: 11pt
+mainfont: Verdana
+header-includes:
+  - \usepackage{float}
+  - \usepackage{graphicx}
+  - \usepackage{geometry}
+  - \usepackage{float}
+  - \floatplacement{figure}{H}
+bibliography: "docs/references.bib"
+editor_options:
+  markdown:
+    wrap: 72
+---
+
+\newpage
+
+
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
